@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+#workshop-page, #login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a90e2, #9013fe); /* Gradient background */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    margin: 20px;
+    max-height: 80vh; /* Limit the height */
+    overflow-y: auto; /* Enable scrolling for content */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.submit-btn, .nav-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover, .nav-btn:hover {
+    background-color: #3e8e41;
+}
+/* Additional styles for the success page */
+.success-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+.phone-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#phoneExtension {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="tel"] {
+    width: calc(100% - 50px); /* Adjust width to fit with the extension */
+    padding: 12px;
+    margin-bottom: 0; /* Remove bottom margin to align with extension */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    text-align: right; /* Align text to right to fit with extension */
+}
+
+input[type="tel"]::placeholder {
+    color: #888; /* Light gray placeholder text */
+}
+.phone-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#phoneExtension {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="tel"] {
+    flex: 1; /* Allows the input to take up remaining space */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    text-align: left; /* Aligns the text to the left */
+}
+
+input[type="tel"]::placeholder {
+    color: #888; /* Light gray placeholder text */
+}
